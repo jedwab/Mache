@@ -70,7 +70,7 @@ $grey-font:  #5a5a5a;
 
 
 header {
-    background-image: url("/images/background.png");
+    background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -482,22 +482,22 @@ header {
                 text-align:left;
             }
             .gallery-1 {
-                background-image: url("/images/foto-1.png");
+                background-image: url("../images/foto-1.png");
             }
             .gallery-2 {
-                background-image: url("/images/foto-2.png");
+                background-image: url("../images/foto-2.png");
             }
             .gallery-3 {
-                background-image: url("/images/foto-3.png");
+                background-image: url("../images/foto-3.png");
             }
             .gallery-4 {
-                background-image: url("/images/foto-4.png");
+                background-image: url("../images/foto-4.png");
             }
             .gallery-5 {
-                background-image: url("/images/foto-5.png");
+                background-image: url("../images/foto-5.png");
             }
             .gallery-6 {
-                background-image: url("/images/foto-6.png");
+                background-image: url("../images/foto-6.png");
             }
         } 
  
@@ -514,7 +514,7 @@ header {
 }
 #show-more {
     .psd{
-       background-image:url("/images/background.png");
+       background-image:url("../images/background.png");
        width: 100%;
        height: 80vh;
        background-size: cover;

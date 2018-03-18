@@ -19,7 +19,7 @@ body {
   padding-top: 100px; }
 
 header {
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -429,17 +429,17 @@ header {
     letter-spacing: 0.38px;
     text-align: left; }
   #gallery .col-lg-4 .gallery-1 {
-    background-image: url("/images/foto-1.png"); }
+    background-image: url("../images/foto-1.png"); }
   #gallery .col-lg-4 .gallery-2 {
-    background-image: url("/images/foto-2.png"); }
+    background-image: url("../images/foto-2.png"); }
   #gallery .col-lg-4 .gallery-3 {
-    background-image: url("/images/foto-3.png"); }
+    background-image: url("../images/foto-3.png"); }
   #gallery .col-lg-4 .gallery-4 {
-    background-image: url("/images/foto-4.png"); }
+    background-image: url("../images/foto-4.png"); }
   #gallery .col-lg-4 .gallery-5 {
-    background-image: url("/images/foto-5.png"); }
+    background-image: url("../images/foto-5.png"); }
   #gallery .col-lg-4 .gallery-6 {
-    background-image: url("/images/foto-6.png"); }
+    background-image: url("../images/foto-6.png"); }
 #gallery .show {
   color: #ed145b;
   font-size: 15px;
@@ -453,7 +453,7 @@ header {
     padding-top: 10px; }
 
 #show-more .psd {
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
   width: 100%;
   height: 80vh;
   background-size: cover;
