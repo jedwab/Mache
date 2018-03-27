@@ -438,9 +438,10 @@ header {
 }   }
 #contact {
     background-color: $machepink;
+    display: flex;
+    text-align: center;
+    align-items: center;
         h2 {
-            display:flex;
-            align-items: center;
             padding: 30px 0;
             letter-spacing: 0.95px;
             font-size: 38px;
@@ -665,3 +666,261 @@ footer {
         }
 
     }
+@media (min-width: 992px) and (max-width: 1199px) {
+    #power {
+        p {
+            max-width: 600px;
+        }
+        .laptop-parent {
+            .laptop {
+                position: absolute;
+                right: -30%;
+               
+            }
+        }
+    } 
+
+    #prices {
+        .container {
+           .top  {
+                button  {
+                    padding: 2px 25px;
+                }
+                p {
+                    margin-bottom: 22%;
+                }
+           }
+           
+        } 
+    }
+    #contact {
+        height: 18vh;
+        
+        button {
+            margin: 10px 0 5px 0;
+
+        }
+    }
+    
+}
+@media (min-width:768px) and (max-width: 992px) {
+    #power {
+        .laptop-parent {
+            .laptop  {
+                display:none;
+          }
+        } 
+    }
+    #slideshow  {
+        .carousel-caption {
+            p   {
+                font-size: 20px;
+            }
+            i {
+                font-size: 30px;
+            }
+            .fa-quote-right {
+                padding-top: 20px;
+            }
+            .fa-quote-left {
+                padding-bottom: 20px;
+            }
+        } 
+    }
+    #prices {
+        .container {
+           .top  {
+                button  {
+                    padding: 2px 25px;
+                }
+                p {
+                    margin-bottom: 22%;
+                }
+           }
+           
+        } 
+    }
+    #show-more {
+        .psd {
+            height: 50vh;
+        }
+    }
+    #share {
+        .row {
+            .right-text {
+                padding:50px 0;
+            }
+        }
+    }
+    footer {
+        padding:30px 0;
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+
+    header {
+        .header-text {
+            h1 {
+                font-size: 36px;
+            }
+            button {
+                margin-top:60px;
+            }
+        }
+    }
+    #power {
+        .laptop-parent {
+            .laptop  {
+                display:none;
+          }
+        } 
+    }
+    #slideshow  {
+        .carousel-caption {
+            p   {
+                font-size: 16px;
+            }
+            i {
+                font-size: 20px;
+            }
+            .fa-quote-right {
+                padding-top: 10px;
+            }
+            .fa-quote-left {
+                padding-bottom: 10px;
+            }
+        } 
+    }
+    #prices {
+        .container {
+           .top  {
+                button  {
+                    padding: 2px 25px;
+                }
+                p {
+                    margin-bottom: 22%;
+                }
+           }
+           
+        } 
+    }
+    #show-more {
+        .psd {
+            height: 60vh;
+            button {
+                margin-bottom:30px;
+            }
+        }
+
+    }
+    #contact {
+        button {
+            margin-top:15px;
+        }
+    }
+    #share {
+        .row {
+            .right-text {
+                padding:50px 0;
+            }
+        }
+    }
+    footer {
+        padding:30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    header {
+        .navbar-default {
+            .navbar-collapse {
+                .nav {
+                    flex-direction:column;
+                }
+            }
+        }
+        .header-text {
+            h1 {
+                font-size: 28px;
+                
+            }
+            p {
+                font-size: 15px;
+            }
+            button {
+                margin-top:60px;
+            }
+        }
+    }
+    #power {
+        .laptop-parent {
+            .laptop  {
+                display:none;
+          }
+        } 
+    }
+    #slideshow  {
+        .carousel-caption {
+            p   {
+                font-size: 12px;
+            }
+            i {
+                font-size: 15px;
+            }
+            .fa-quote-right {
+                padding-top: 5px;
+            }
+            .fa-quote-left {
+                padding-bottom: 5px;
+            }
+        } 
+        .carousel-slide {
+            height: 50vh;
+        }
+    }
+    #prices {
+        .container {
+           .top  {
+                button  {
+                    padding: 2px 25px;
+                }
+                p {
+                    margin-bottom: 22%;
+                }
+           }
+           
+        } 
+    }
+    #show-more {
+        .psd {
+            height: 80vh;
+            button {
+                margin-bottom:30px;
+            }
+        }
+
+    }
+    #contact {
+        button {
+            margin-top:15px;
+        }
+    }
+    #share {
+        .browser {
+            display:none;
+        }
+        .row {
+            .right-text {
+                padding:50px 0;
+            }
+        }
+    }
+    footer {
+        padding:30px 0;
+    }
+}
+
+
+

@@ -371,10 +371,11 @@ header {
       padding-top: 15px; }
 
 #contact {
-  background-color: #ed145b; }
+  background-color: #ed145b;
+  display: flex;
+  text-align: center;
+  align-items: center; }
   #contact h2 {
-    display: flex;
-    align-items: center;
     padding: 30px 0;
     letter-spacing: 0.95px;
     font-size: 38px;
@@ -617,5 +618,128 @@ footer {
     font-weight: 600; }
   footer span {
     font-weight: 600; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #power p {
+    max-width: 600px; }
+  #power .laptop-parent .laptop {
+    position: absolute;
+    right: -30%; }
+
+  #prices .container .top button {
+    padding: 2px 25px; }
+  #prices .container .top p {
+    margin-bottom: 22%; }
+
+  #contact {
+    height: 18vh; }
+    #contact button {
+      margin: 10px 0 5px 0; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  #power .laptop-parent .laptop {
+    display: none; }
+
+  #slideshow .carousel-caption p {
+    font-size: 20px; }
+  #slideshow .carousel-caption i {
+    font-size: 30px; }
+  #slideshow .carousel-caption .fa-quote-right {
+    padding-top: 20px; }
+  #slideshow .carousel-caption .fa-quote-left {
+    padding-bottom: 20px; }
+
+  #prices .container .top button {
+    padding: 2px 25px; }
+  #prices .container .top p {
+    margin-bottom: 22%; }
+
+  #show-more .psd {
+    height: 50vh; }
+
+  #share .row .right-text {
+    padding: 50px 0; }
+
+  footer {
+    padding: 30px 0; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  header .header-text h1 {
+    font-size: 36px; }
+  header .header-text button {
+    margin-top: 60px; }
+
+  #power .laptop-parent .laptop {
+    display: none; }
+
+  #slideshow .carousel-caption p {
+    font-size: 16px; }
+  #slideshow .carousel-caption i {
+    font-size: 20px; }
+  #slideshow .carousel-caption .fa-quote-right {
+    padding-top: 10px; }
+  #slideshow .carousel-caption .fa-quote-left {
+    padding-bottom: 10px; }
+
+  #prices .container .top button {
+    padding: 2px 25px; }
+  #prices .container .top p {
+    margin-bottom: 22%; }
+
+  #show-more .psd {
+    height: 60vh; }
+    #show-more .psd button {
+      margin-bottom: 30px; }
+
+  #contact button {
+    margin-top: 15px; }
+
+  #share .row .right-text {
+    padding: 50px 0; }
+
+  footer {
+    padding: 30px 0; } }
+@media (max-width: 576px) {
+  header .navbar-default .navbar-collapse .nav {
+    flex-direction: column; }
+  header .header-text h1 {
+    font-size: 28px; }
+  header .header-text p {
+    font-size: 15px; }
+  header .header-text button {
+    margin-top: 60px; }
+
+  #power .laptop-parent .laptop {
+    display: none; }
+
+  #slideshow .carousel-caption p {
+    font-size: 12px; }
+  #slideshow .carousel-caption i {
+    font-size: 15px; }
+  #slideshow .carousel-caption .fa-quote-right {
+    padding-top: 5px; }
+  #slideshow .carousel-caption .fa-quote-left {
+    padding-bottom: 5px; }
+  #slideshow .carousel-slide {
+    height: 50vh; }
+
+  #prices .container .top button {
+    padding: 2px 25px; }
+  #prices .container .top p {
+    margin-bottom: 22%; }
+
+  #show-more .psd {
+    height: 80vh; }
+    #show-more .psd button {
+      margin-bottom: 30px; }
+
+  #contact button {
+    margin-top: 15px; }
+
+  #share .browser {
+    display: none; }
+  #share .row .right-text {
+    padding: 50px 0; }
+
+  footer {
+    padding: 30px 0; } }
 
 /*# sourceMappingURL=style.css.map */
