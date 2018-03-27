@@ -4,7 +4,8 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #fff;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 .text-container {
   padding: 0 15%;
@@ -100,16 +101,14 @@ header {
     padding-bottom: 50px;
     background-color: #f4f4f4; }
     #power .pink-triangle::before {
-      background: #ed145b;
-      bottom: 100%;
-      left: -1%;
-      width: 100%;
-      height: 200%;
-      transform: rotate(-1deg);
-      transform-origin: 100% 100%; }
-    #power .pink-triangle::after {
       content: '';
-      position: absolute; }
+      display: block;
+      width: 100%;
+      height: 2.2em;
+      background-color: #ed145b;
+      position: absolute;
+      top: -25%;
+      transform: skewY(-0.8deg); }
   #power h2 {
     color: #5a5a5a;
     font-style: italic;
@@ -141,11 +140,17 @@ header {
       letter-spacing: 0.38px; }
     #power .youtube .play {
       margin-left: 20px; }
-  #power .laptop {
+  #power .laptop-parent {
+    height: 0;
+    width: 50%;
     position: absolute;
-    transform: scale(0.8);
-    right: -5%;
-    top: -1%; }
+    top: 50px;
+    right: 0; }
+    #power .laptop-parent .laptop {
+      position: absolute;
+      right: -50%;
+      top: 0;
+      width: 150%; }
 
 #services .container {
   margin-top: 100px; }
@@ -551,5 +556,3 @@ footer {
     font-weight: 600; }
   footer span {
     font-weight: 600; }
-
-/*# sourceMappingURL=style.css.map */
