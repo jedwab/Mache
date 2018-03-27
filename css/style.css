@@ -4,7 +4,8 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #fff;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 .text-container {
   padding: 0 15%;
@@ -14,9 +15,20 @@ body {
   flex-direction: column;
   justify-content: center; }
 
-.my-continer {
-  margin-top: 100px;
-  padding-top: 100px; }
+.pink-triangle {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  background-color: #f4f4f4; }
+  .pink-triangle::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2.2em;
+    background-color: #ed145b;
+    position: absolute;
+    top: -25%;
+    transform: skewY(-1deg); }
 
 header {
   background-image: url("../images/background.png");
@@ -77,7 +89,7 @@ header {
     header .header-text button {
       border-radius: 25px;
       background-color: #ed145b;
-      border: none;
+      border: 1px solid transparent;
       font-size: 15px;
       font-weight: 700;
       line-height: 38px;
@@ -86,6 +98,8 @@ header {
       padding: 5px 50px;
       transition: 0.8s ease-in-out;
       margin-top: 10px; }
+      header .header-text button:focus {
+        outline: none; }
       header .header-text button:hover {
         background-color: transparent;
         border: 1px solid #ed145b;
@@ -100,16 +114,14 @@ header {
     padding-bottom: 50px;
     background-color: #f4f4f4; }
     #power .pink-triangle::before {
-      background: #ed145b;
-      bottom: 100%;
-      left: -1%;
-      width: 100%;
-      height: 200%;
-      transform: rotate(-1deg);
-      transform-origin: 100% 100%; }
-    #power .pink-triangle::after {
       content: '';
-      position: absolute; }
+      display: block;
+      width: 100%;
+      height: 2.2em;
+      background-color: #ed145b;
+      position: absolute;
+      top: -25%;
+      transform: skewY(-1deg); }
   #power h2 {
     color: #5a5a5a;
     font-style: italic;
@@ -141,11 +153,17 @@ header {
       letter-spacing: 0.38px; }
     #power .youtube .play {
       margin-left: 20px; }
-  #power .laptop {
+  #power .laptop-parent {
+    height: 0;
+    width: 50%;
     position: absolute;
-    transform: scale(0.8);
-    right: -5%;
-    top: -1%; }
+    top: 50px;
+    right: 0; }
+    #power .laptop-parent .laptop {
+      position: absolute;
+      right: -20%;
+      top: 0;
+      width: 120%; }
 
 #services .container {
   margin-top: 100px; }
@@ -203,12 +221,24 @@ header {
       text-transform: uppercase;
       letter-spacing: 0.38px; }
 
-#slideshow .carousel-caption p {
-  font-style: italic;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.63px; }
+#slideshow .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial; }
+  #slideshow .carousel-caption p {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.63px; }
+  #slideshow .carousel-caption i {
+    color: #ed145b;
+    font-size: 50px; }
+  #slideshow .carousel-caption .fa-quote-left {
+    padding-bottom: 50px; }
+  #slideshow .carousel-caption .fa-quote-right {
+    padding-top: 50px; }
 
 #prices {
   background-color: #f4f4f4; }
@@ -269,7 +299,7 @@ header {
       #prices .container .top button {
         border-radius: 25px;
         background-color: #ed145b;
-        border: none;
+        border: 1px solid transparent;
         font-size: 15px;
         font-weight: 700;
         line-height: 38px;
@@ -281,6 +311,8 @@ header {
         color: #5a5a5a;
         position: absolute;
         bottom: -20%; }
+        #prices .container .top button:focus {
+          outline: none; }
     #prices .container .bottom {
       background-color: #fff;
       color: #5a5a5a;
@@ -300,7 +332,7 @@ header {
       #prices .container .bottom button {
         border-radius: 25px;
         background-color: #ed145b;
-        border: none;
+        border: 1px solid transparent;
         font-size: 15px;
         font-weight: 700;
         line-height: 38px;
@@ -310,6 +342,8 @@ header {
         transition: 0.8s ease-in-out;
         color: #fff;
         margin-bottom: 30px; }
+        #prices .container .bottom button:focus {
+          outline: none; }
 
 #features .container {
   margin-top: 100px;
@@ -353,7 +387,7 @@ header {
     #contact h2 button {
       border-radius: 25px;
       background-color: #ed145b;
-      border: none;
+      border: 1px solid transparent;
       font-size: 15px;
       font-weight: 700;
       line-height: 38px;
@@ -364,6 +398,8 @@ header {
       background-color: #fff;
       color: #ed145b;
       margin-left: 20px; }
+      #contact h2 button:focus {
+        outline: none; }
       #contact h2 button:hover {
         border: 1px solid #fff;
         background-color: #ed145b;
@@ -411,7 +447,33 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px; }
+    width: 360px;
+    overflow: hidden;
+    position: relative; }
+    #gallery .col-lg-4 .gallery:hover .gallery-layered {
+      margin-top: 0;
+      background-color: rgba(237, 20, 91, 0.7); }
+    #gallery .col-lg-4 .gallery:hover i {
+      color: #FFF;
+      cursor: pointer;
+      z-index: 999; }
+    #gallery .col-lg-4 .gallery .gallery-layered {
+      background-color: #ed145b;
+      width: 300%;
+      height: 120%;
+      transform: -webkit-rotate(2deg);
+      transform: -ms-rotate(2deg);
+      transform: rotate(2deg);
+      left: -30px;
+      top: 0;
+      margin-top: 250px;
+      transition: .4s ease-in-out;
+      position: absolute; }
+    #gallery .col-lg-4 .gallery i {
+      color: rgba(255, 255, 255, 0);
+      font-size: 40px;
+      transition: .4s ease-in;
+      transition-delay: .4s; }
   #gallery .col-lg-4 h4 {
     color: #ed145b;
     font-size: 15px;
@@ -486,7 +548,7 @@ header {
   #show-more .psd button {
     border-radius: 25px;
     background-color: #ed145b;
-    border: none;
+    border: 1px solid transparent;
     font-size: 15px;
     font-weight: 700;
     line-height: 38px;
@@ -494,6 +556,8 @@ header {
     letter-spacing: 0.38px;
     padding: 5px 50px;
     transition: 0.8s ease-in-out; }
+    #show-more .psd button:focus {
+      outline: none; }
     #show-more .psd button:hover {
       background-color: transparent;
       border: 1px solid #ed145b;
@@ -529,7 +593,7 @@ header {
     #share .row .right-text button {
       border-radius: 25px;
       background-color: #ed145b;
-      border: none;
+      border: 1px solid transparent;
       font-size: 15px;
       font-weight: 700;
       line-height: 38px;
@@ -537,6 +601,8 @@ header {
       letter-spacing: 0.38px;
       padding: 5px 50px;
       transition: 0.8s ease-in-out; }
+      #share .row .right-text button:focus {
+        outline: none; }
 #share .browser {
   transform: scale(0.9); }
 
