@@ -773,7 +773,8 @@ footer {
     display: none; }
 
   #slideshow .carousel-caption p {
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 25px; }
   #slideshow .carousel-caption i {
     font-size: 15px; }
   #slideshow .carousel-caption .fa-quote-right {
@@ -791,9 +792,13 @@ footer {
   #show-more .psd {
     height: 80vh; }
     #show-more .psd h2 {
-      font-size: 32px; }
+      font-size: 30px; }
+    #show-more .psd p {
+      font-size: 13px; }
     #show-more .psd button {
       margin-bottom: 30px; }
+  #show-more .text-container {
+    padding: 0; }
 
   #contact button {
     margin-top: 15px; }
