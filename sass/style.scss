@@ -700,7 +700,7 @@ footer {
     }
     #show-more {
         .psd {
-            height: 50vh;
+            height: 70vh;
         }
     }
     #share {
@@ -763,7 +763,10 @@ footer {
     }
     #show-more {
         .psd {
-            height: 60vh;
+            height: 80vh;
+            h2 {
+                font-size: 32px;
+            }
             button {
                 margin-bottom: 30px;
             }
@@ -848,6 +851,9 @@ footer {
     #show-more {
         .psd {
             height: 80vh;
+            h2 {
+                font-size:32px;
+            }
             button {
                 margin-bottom: 30px;
             }

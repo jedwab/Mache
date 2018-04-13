@@ -654,7 +654,7 @@ footer {
     margin-bottom: 22%; }
 
   #show-more .psd {
-    height: 50vh; }
+    height: 70vh; }
 
   #share .row .right-text {
     padding: 50px 0; }
@@ -685,7 +685,9 @@ footer {
     margin-bottom: 22%; }
 
   #show-more .psd {
-    height: 60vh; }
+    height: 80vh; }
+    #show-more .psd h2 {
+      font-size: 32px; }
     #show-more .psd button {
       margin-bottom: 30px; }
 
@@ -728,6 +730,8 @@ footer {
 
   #show-more .psd {
     height: 80vh; }
+    #show-more .psd h2 {
+      font-size: 32px; }
     #show-more .psd button {
       margin-bottom: 30px; }
 
